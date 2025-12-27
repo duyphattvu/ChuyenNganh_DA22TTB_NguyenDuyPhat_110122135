@@ -1,0 +1,75 @@
+.sale-page {
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+}
+
+.sale-card {
+  position: relative;
+  border: 2px solid #ff6b6b;
+}
+
+.sale-card:hover {
+  border-color: #dc3545;
+  box-shadow: 0 12px 40px rgba(220, 53, 69, 0.3);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #dc3545 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.original-price {
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.sale-price {
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #dc3545 0%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sale-label {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color: #dc3545;
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0%, 100% {
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.8);
+  }
+}
